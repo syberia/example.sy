@@ -1,0 +1,25 @@
+packages:
+  -
+    name: stagerunner
+    version: 0.5.0
+    repo: robertzk/stagerunner
+  -
+    name: mungebits
+    version: 0.3.12
+    repo: robertzk/mungebits
+  -
+    name: syberiaMungebits
+    version: 0.2.3
+    repo: robertzk/syberiaMungebits
+  -
+    name: director
+    version: 0.3.0.5
+    repo: robertzk/director
+    ref: documentation_cleanup
+  -
+    name: syberia
+    version: 0.5.0.9000
+    remote: local
+    dir: ~/dev/syberia
+    #repo: robertzk/syberia
+    #ref: engines
