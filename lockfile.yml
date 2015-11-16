@@ -1,5 +1,9 @@
 packages:
   -
+    name: objectdiff
+    version: 0.2.3
+    repo: robertzk/objectdiff
+  -
     name: stagerunner
     version: 0.5.0
     repo: robertzk/stagerunner
@@ -20,10 +24,22 @@ packages:
     version: 0.2.3
     repo: robertzk/syberiaMungebits
   -
+    name: syberiaStructure
+    version: 0.2.2
+    repo: robertzk/syberiaStructure
+  -
+    name: syberiaStages
+    version: 0.2.3
+    repo: robertzk/syberiaStages
+  -
     name: director
     version: 0.3.0.5
     repo: robertzk/director
     ref: documentation_cleanup
+  -
+    name: tundra
+    version: 0.2.3
+    repo: robertzk/tundra
   -
     name: syberia
     version: 0.5.0.9001
