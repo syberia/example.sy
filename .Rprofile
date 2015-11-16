@@ -26,7 +26,14 @@ if (!nzchar(Sys.getenv("R_ROOT"))) {
   if (!is.element("R6", installed_packages)) {
     quick_install(utils::install.packages("R6"), "R6")
   }
+
   library(R6)
+
+  if (!is.element("testthatsomemore", installed_packages) ||
+      packageVersion("testthatsomemore") < package_version("0.2.4")) {
+    quick_install(devtools::install_github("robertzk/testthatsomemore"),
+                  "testthatsomemore")
+  }
 
   if (!is.element("lockbox", utils::installed.packages()[, 1])) {
     quick_install(devtools::install_github("robertzk/lockbox"), "lockbox")
