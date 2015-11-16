@@ -39,7 +39,7 @@ if (!nzchar(Sys.getenv("R_ROOT"))) {
                   "testthatsomemore")
   }
 
-  if (!is.element("lockbox", utils::installed.packages()[, 1])) {
+  if (!is.element("lockbox", installed_packages)) {
     quick_install(devtools::install_github("robertzk/lockbox"), "lockbox")
   }
 
