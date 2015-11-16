@@ -1,9 +1,5 @@
 packages:
   -
-    name: testthatsomemore
-    version: 0.2.4
-    repo: robertzk/testthatsomemore
-  -
     name: stagerunner
     version: 0.5.0
     repo: robertzk/stagerunner
