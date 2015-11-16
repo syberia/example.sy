@@ -23,6 +23,10 @@ if (!nzchar(Sys.getenv("R_ROOT"))) {
     quick_install(utils::install.packages("devtools"), "devtools")
   }
 
+  if (!is.element("purrr", installed_packages)) {
+    quick_install(utils::install.packages("purrr"), "purrr")
+  }
+
   if (!is.element("R6", installed_packages)) {
     quick_install(utils::install.packages("R6"), "R6")
   }
