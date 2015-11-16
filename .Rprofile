@@ -1,3 +1,5 @@
+library(utils)
+library(methods)
 installed_packages <- utils::installed.packages()[, 1]
 
 quick_install <- function(install_expr, name) {
@@ -19,7 +21,6 @@ if (!is.element("devtools", installed_packages)) {
 }
 
 if (!is.element("lockbox", utils::installed.packages()[, 1])) {
-  library(utils)
   quick_install(devtools::install_github("robertzk/lockbox"), "lockbox")
 }
 
