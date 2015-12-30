@@ -42,7 +42,7 @@ packages:
     repo: robertzk/tundra
   -
     name: syberia
-    version: 0.5.0.9001
+    version: 0.6.1
     #remote: local
     #dir: ~/dev/syberia
     repo: robertzk/syberia
