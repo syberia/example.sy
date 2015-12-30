@@ -21,7 +21,7 @@ packages:
     repo: robertzk/mungebits
   -
     name: syberiaMungebits
-    version: 0.2.3
+    version: 0.2.6
     repo: robertzk/syberiaMungebits
   -
     name: syberiaStructure
