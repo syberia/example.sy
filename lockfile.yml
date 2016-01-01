@@ -42,9 +42,9 @@ packages:
   -
     name: syberia
     version: 0.6.1.9000
-    remote: local
-    dir: ~/dev/syberia
-    #repo: syberia/syberia
+    #remote: local
+    #dir: ~/dev/syberia
+    repo: syberia/syberia
     #ref: engines
   -
     name: mungebits2
