@@ -1,5 +1,8 @@
 if (!nzchar(Sys.getenv("R_ROOT"))) {
   Sys.setenv("R_ROOT" = "TRUE")
+  # Avoid pesky X11 UI for new users.
+  options(repos = structure(c(CRAN = "http://cran.rstudio.com/")))
+  options(menu.graphics = FALSE)
   library(stats)
   library(utils)
   library(methods)

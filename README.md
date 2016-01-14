@@ -25,3 +25,22 @@ run the model by leaving out letters as long as they appear
 consecutively in the model filename: `run("ex1")` or `run("mple")` will
 work equally well.
 
+## Running
+
+First, run this from the Terminal:
+
+```
+git clone git@github.com:syberia/example.sy.git && cd example.sy && R
+```
+
+It should run through lockbox and install all the dependencies.
+
+In your R session, run:
+
+```R
+run("example"); model$predict(iris[1:5, ])
+```
+
+You should then see the model run, followed by model predictions:
+
+![](http://syberia.io/images/example_run.png)
