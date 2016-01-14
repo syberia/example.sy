@@ -5,8 +5,8 @@ packages:
     repo: robertzk/objectdiff
   -
     name: stagerunner
-    version: 0.5.0
-    repo: robertzk/stagerunner
+    version: 0.5.3
+    repo: syberia/stagerunner
   -
     name: Ramd
     version: 0.2.2
@@ -17,33 +17,25 @@ packages:
     repo: robertzk/statsUtils
   -
     name: mungebits
-    version: 0.3.12
+    version: 0.3.13
     repo: robertzk/mungebits
+  # -
+  #   name: mungebits2
+  #   version: 0.1.0
+  #   repo: syberia/mungebits2
   -
     name: syberiaMungebits
-    version: 0.2.3
+    version: 0.2.6
     repo: robertzk/syberiaMungebits
-  -
-    name: syberiaStructure
-    version: 0.2.2
-    repo: robertzk/syberiaStructure
-  -
-    name: syberiaStages
-    version: 0.2.3
-    repo: robertzk/syberiaStages
   -
     name: director
     version: 0.3.0.5
-    repo: robertzk/director
-    ref: documentation_cleanup
+    repo: syberia/director
   -
     name: tundra
-    version: 0.2.3
-    repo: robertzk/tundra
+    version: 0.3.0
+    repo: syberia/tundra
   -
     name: syberia
-    version: 0.5.0.9001
-    #remote: local
-    #dir: ~/dev/syberia
-    repo: robertzk/syberia
-    #ref: engines
+    version: 0.6.1
+    repo: syberia/syberia
