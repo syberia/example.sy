@@ -3,18 +3,16 @@ if (!nzchar(Sys.getenv("R_ROOT"))) {
   library(utils)
   library(stats)
 
-  Sys.setenv("R_ROOT" = "TRUE") # Don't re-lockbox for process forks, like GBM
+  Sys.setenv("R_ROOT" = "TRUE") # Don't re-lockbox for process forks, like GBM.
 
-  # Set to TRUE to get verbose lockbox output.
-  options(lockbox.verbose = TRUE)
-
-  # Set important common options
-  options(stringsAsFactors = FALSE)
-  options(menu.graphics = FALSE) # Disable tcl/tk for installation from CRAN
-  options(repos = structure(c(CRAN = "http://streaming.stat.iastate.edu/CRAN/")))
+  options(lockbox.verbose = TRUE, # Set to TRUE to get verbose lockbox output.
+          # Set important common options.
+          stringsAsFactors = FALSE,
+          menu.graphics = FALSE, # Disable tcl/tk for installation from CRAN.
+          repos = structure(c(CRAN = "http://streaming.stat.iastate.edu/CRAN/")))
 
   # Install all the packages that can't be managed by lockbox or Ramd.
-  # Make sure we install it in the correct library, for users with multiple libPaths...
+  # Make sure we install it in the correct library for users with multiple libPaths...
   if (Sys.getenv("R_LIBS_USER") %in% .libPaths()) {
     main_lib <- normalizePath(Sys.getenv("R_LIBS_USER"))
   } else {
