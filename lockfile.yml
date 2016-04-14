@@ -43,7 +43,5 @@ packages:
   -
     name: syberia
     version: 0.6.1
-    #remote: local
-    #dir: ~/dev/syberia
-    repo: robertzk/syberia
-    #ref: engines
+    repo: syberia/syberia
+    ref: 0.6-stable
