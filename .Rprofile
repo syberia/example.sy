@@ -41,7 +41,7 @@ if (!nzchar(Sys.getenv("R_ROOT"))) {
   lapply(c("httr", "yaml", "digest", "crayon"), install_if_not_installed)
 
   # Now we install lockbox.
-  if (!is_installed("lockbox")) {
+  if (!is_installed("lockbox") && packageVersion("lockbox") < package_version("0.2.2")) {
     for (path in .libPaths()) {
       try(utils::remove.packages("lockbox", lib = path), silent = TRUE)
     }
