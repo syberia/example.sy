@@ -1,4 +1,8 @@
 packages:
+  - 
+    name: s3mpi
+    version: 0.2.19
+    repo: robertzk/s3mpi
   -
     name: objectdiff
     version: 0.2.3.9003
@@ -35,4 +39,4 @@ packages:
     name: syberia
     version: 0.6.1.9009
     repo: syberia/syberia
-    ref: 0.6-dev
+    ref: 0.6.1.9009
