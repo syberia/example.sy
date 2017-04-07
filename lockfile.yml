@@ -1,5 +1,9 @@
 packages:
   - 
+    name: memoise # Needed for checkr - for some reason does not auto-install
+    version: 1.0.0
+    repo: hadley/memoise@v1.0.0
+  - 
     name: s3mpi
     version: 0.2.19
     repo: robertzk/s3mpi
