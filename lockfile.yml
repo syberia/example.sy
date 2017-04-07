@@ -1,9 +1,8 @@
 packages:
   - 
-    name: memoise # Needed for checkr - for some reason does not auto-install
-    version: 1.0.0
-    repo: hadley/memoise
-    ref: v1.0.0
+    name: checkr
+    version: 0.1.4
+    repo: syberia/checkr
   - 
     name: s3mpi
     version: 0.2.19
