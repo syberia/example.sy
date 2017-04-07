@@ -1,4 +1,9 @@
 packages:
+  -
+    name: devtools
+    version: 1.12.0
+    repo: hadley/devtools
+    ref: v1.12.0
   - 
     name: checkr
     version: 0.1.4
