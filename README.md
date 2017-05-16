@@ -15,7 +15,7 @@ for a modeling project. It consists of the following files:
     this model, the final output will be in a global variable
     called `model`.
   * [An example mungebit](lib/mungebits/sanitize_gender.R) - A trivial
-    [mungebit](https://github.com/robertzk/mungebits2), the Syberia
+    [mungebit](https://github.com/syberia/mungebits2), the Syberia
     approach to feature engineering that allows re-use of the same
     code during experimental sandbox training and real-time prediction.
   
