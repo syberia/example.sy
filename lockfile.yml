@@ -10,7 +10,7 @@ packages:
     repo: syberia/checkr
   - 
     name: s3mpi
-    version: 0.2.37
+    version: 0.2.38
     repo: robertzk/s3mpi
   -
     name: objectdiff
