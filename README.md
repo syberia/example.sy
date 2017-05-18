@@ -5,7 +5,7 @@ for a modeling project. It consists of the following files:
 
   * [The lockfile](lockfile.yml) - A specification of which packages
     should be loaded for an R session using this project through
-    [lockbox](https://github.com/robertzk/lockbox).
+    [lockbox](https://github.com/syberia/lockbox).
   * [The engines file](config/engines.R) - This file is necessary
     for any Syberia project. In this example, we are using the
     [modeling engine](https://github.com/syberia/modeling.sy).
