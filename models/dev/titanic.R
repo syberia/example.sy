@@ -27,21 +27,21 @@ list(
   ),
 
   data = list(
-    "has paren in name" = list(multi_column_transformation(function(name) grepl("(", fixed = TRUE, name)), "name", "has_paren")
-   ,"Name length variable" = list(new_variable, function(name) nchar(name), "name_length")
-   ,"Formal title" = list(regex_factor, "name", "title", cases = titles, fixed = fixed_titles)
-   ,"Ticket type" = list(regex_factor, "ticket", "ticket_type", cases = tickets, fixed = fixed_tickets)
-   ,"title_fare variable" = list(new_variable, function(title, fare) { stats::ave(fare, title, FUN = mean) }, "title_fare")
-   ,"class_fare"           = list(multi_column_transformation(function(klass, fare) { ave(fare, klass, FUN = mean) }), c("pclass", "fare"), "class_fare")
+    "has paren in name"       = list(multi_column_transformation(function(name) grepl("(", fixed = TRUE, name)), "name", "has_paren")
+   ,"Name length variable"    = list(new_variable, function(name) nchar(name), "name_length")
+   ,"Formal title"            = list(regex_factor, "name", "title", cases = titles, fixed = fixed_titles)
+   ,"Ticket type"             = list(regex_factor, "ticket", "ticket_type", cases = tickets, fixed = fixed_tickets)
+   ,"title_fare variable"     = list(new_variable, function(title, fare) { stats::ave(fare, title, FUN = mean) }, "title_fare")
+   ,"class_fare"              = list(multi_column_transformation(function(klass, fare) { ave(fare, klass, FUN = mean) }), c("pclass", "fare"), "class_fare")
    ,"Some simple derivations" = list(atransform, alist(fare_diff = fare - title_fare, fare_pct = fare / title_fare, fare_diff_class = fare - class_fare, fare_pct_class = fare / class_fare))
    ,"Derived cabin variables" = list(atransform, cabin_derivations)
-   ,"Cabin diff and pct" = list(atransform, alist(fare_diff_cabin = fare - cabin_fare, fare_pct_bain   = fare / cabin_fare))
-   ,"cabin_single_letter"  = list(new_variable, function(cabin_letter) factor(gsub("^(.).*$", "\\1", cabin_letter)), "cabin_single_letter")
-   ,"Set factors" = list(!factor, c("sex", "embarked"))
-   ,"Logical to factor"    = list(!as.factor, is.logical)
-   ,"Drop character vars"  = list(drop_variables, is.character)
-   ,"Restore levels"       = list(restore_categorical_variables, is.factor)
-   ,"Rename dep_var"       = list(renamer, c("survived" = "dep_var"))
+   ,"Cabin diff and pct"      = list(atransform, alist(fare_diff_cabin = fare - cabin_fare, fare_pct_cabin = fare / cabin_fare))
+   ,"cabin_single_letter"     = list(new_variable, function(cabin_letter) factor(gsub("^(.).*$", "\\1", cabin_letter)), "cabin_single_letter")
+   ,"Set factors"             = list(!factor, c("sex", "embarked"))
+   ,"Logical to factor"       = list(!as.factor, is.logical)
+   ,"Drop character vars"     = list(drop_variables, is.character)
+   ,"Restore levels"          = list(restore_categorical_variables, is.factor)
+   ,"Rename dep_var"          = list(renamer, c("survived" = "dep_var"))
   ),
 
   model = list('gbm'
