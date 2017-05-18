@@ -51,6 +51,4 @@ packages:
     ref: 0.6.1.9009
   -
     name: gbm
-    version: 2.1.6
-    ref: 3410a969090d3d2b2d48f3594bbd251a2287b843
-    repo: gbm-developers/gbm3
+    version: 2.1.1

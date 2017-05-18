@@ -40,23 +40,23 @@ list(
    ,"Set factors" = list(!factor, c("sex", "embarked"))
    ,"Logical to factor"    = list(!as.factor, is.logical)
    ,"Drop character vars"  = list(drop_variables, is.character)
-   ,"Restore levels"       = list(restore_categorical_variables)
+   ,"Restore levels"       = list(restore_categorical_variables, is.factor)
    ,"Rename dep_var"       = list(renamer, c("survived" = "dep_var"))
   ),
 
   model = list('gbm'
     , .id_var             = 'X'
     , distribution        = 'bernoulli'
-    , number_of_trees     = 3000
-    , shrinkage_factor    = 0.005
+    , number_of_trees     = 100  # Set to 3000 for better model.
+    , shrinkage_factor    = 0.05 # Set to 0.005 for better model.
     , depth               = 5
     , min_observations    = 6
     , train_fraction      = 1
     , bag_fraction        = 0.5
-    , cv                  = TRUE
-    , cv_folds            = 5
-    , number_of_cores     = 4
-    , perf_method         = 'cv'
+    , cv                  = FALSE # Uncomment lines below for cv.
+  # , cv_folds            = 5 # For CV and/or > 1 cores need GBM globally installed.
+  # , number_of_cores     = 1
+    , perf_method         = 'OOB'
     , prediction_type     = 'response'
   ),
 
