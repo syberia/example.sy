@@ -49,3 +49,6 @@ packages:
     version: 0.6.1.9009
     repo: syberia/syberia
     ref: 0.6.1.9009
+  -
+    name: gbm
+    version: 2.1.1
