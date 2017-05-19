@@ -1,4 +1,4 @@
-# A syberia modeling project <a href="https://travis-ci.org/syberia/example.sy"><img src="https://img.shields.io/travis/syberia/example.sy.svg"></a>
+# A syberia modeling project <a href="https://travis-ci.org/syberia/example.sy"><img src="https://img.shields.io/travis/syberia/example.sy.svg"></a> [![Build Status](https://travis-ci.org/syberia/mungebits2.svg?branch=master)](https://travis-ci.org/syberia/mungebits2)
 
 This repository gives a full example of how to use Syberia
 for a modeling project. It consists of the following files:
