@@ -1,4 +1,4 @@
-# A syberia modeling project <a href="https://travis-ci.org/syberia/example.sy"><img src="https://travis-ci.org/syberia/example.sy.svg?branch=master"></a> 
+# A syberia modeling project <a href="https://travis-ci.org/syberia/example.sy"><img src="https://travis-ci.org/syberia/example.sy.svg?branch=master"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/syberia/syberia/blob/master/LICENSE) [![Join the chat at https://gitter.im/syberia/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/syberia/Lobby) 
 
 This repository gives a full example of how to use Syberia
 for a modeling project. It consists of the following files:
